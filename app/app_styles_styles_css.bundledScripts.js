@@ -7,16 +7,19 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkfrontend_travel_site"] = self["webpackChunkfrontend_travel_site"] || []).push([["app_styles_styles_css"],{
-
-/***/ "./app/styles/styles.css":
-/*!*******************************!*\
+(self["webpackChunkfrontend_travel_site"] = self["webpackChunkfrontend_travel_site"] || []).push([
+  ["app_styles_styles_css"],
+  {
+    /***/ "./app/styles/styles.css":
+      /*!*******************************!*\
   !*** ./app/styles/styles.css ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+      /***/ (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+        eval(
+          "__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://frontend-travel-site/./app/styles/styles.css?",
+        );
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://frontend-travel-site/./app/styles/styles.css?");
-
-/***/ })
-
-}]);
+        /***/
+      },
+  },
+]);
