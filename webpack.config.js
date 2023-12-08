@@ -1,14 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const postCSSPlugins = [
-  require("postcss-simple-vars"),
-  require("postcss-nested"),
-  require("autoprefixer"),
-  require("postcss-import"),
-  require("postcss-mixins"),
-  require("postcss-hexrgba"),
-];
+const postCSSPlugins = [require("postcss-simple-vars"), require("postcss-nested"), require("autoprefixer"), require("postcss-import"), require("postcss-mixins"), require("postcss-hexrgba")];
 
 module.exports = {
   entry: "./app/scripts/App.js",

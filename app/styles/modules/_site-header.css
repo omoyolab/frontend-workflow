@@ -8,9 +8,14 @@
 
     @mixin forTablet{
         background-color: rgba($mainBlue, .3);
+        position: fixed;
+
+        &--dark{
+            background-color: rgba($darkBlue, .9);
+        }
     }
 
-
+    
 
     &__btn-container{
         @mixin forTablet{
@@ -93,14 +98,20 @@
         position: absolute;
         top:0;
         left: 50%;
-        transform: translateX(-50%);
+        transition: transform 2s ease-out;
+        transform: translateX(-50%) scale(.8);
+        transform-origin: 50% 0;
         background-color: $mainBlue;
-        padding: 15px 25px;
+        padding: 25px 36px;
 
         @mixin forTablet {
-            padding: 25px 36px;
+   
             transform: translateX(0);
-            left: auto
+            left: auto;
+            .site-header--dark & {
+                transform: scale(.56);
+                transform-origin: 50% 0;
+            }
 
         }
     }
