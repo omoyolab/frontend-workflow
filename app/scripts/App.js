@@ -14,7 +14,7 @@ document.querySelectorAll(".open-modal").forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
     if (typeof modal == "undefined") {
-      import("./modules/Modal")
+      import("./modules/Modal.js")
         .then((x) => {
           modal = new x.default();
           setTimeout(() => modal.openTheModal(), 20);
