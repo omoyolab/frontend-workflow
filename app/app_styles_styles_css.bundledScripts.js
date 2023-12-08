@@ -15,7 +15,9 @@
   !*** ./app/styles/styles.css ***!
   \*******************************/
       /***/ (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-        eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://frontend-travel-site/./app/styles/styles.css?");
+        eval(
+          "__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://frontend-travel-site/./app/styles/styles.css?",
+        );
 
         /***/
       },

@@ -2,5 +2,5 @@ module.exports = {
   semi: true,
   singleQuote: false,
   proseWrap: "preserve",
-  printWidth: 220,
+  printWidth: 150,
 };
