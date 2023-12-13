@@ -6,11 +6,11 @@ const CSSMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 const fse = require("fs-extra");
 
 const postCSSPlugins = [
+  require("postcss-mixins"),
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("autoprefixer"),
   require("postcss-import"),
-  require("postcss-mixins"),
   require("postcss-hexrgba"),
 ];
 
@@ -27,7 +27,7 @@ class RunAfterCompile {
 let cssConfiguration = {
   
     test: /\.css$/i,
-    use: [  {loader: "css-loader", options: { url: false }, }, {loader: "postcss-loader", options: { postcssOptions: {   plugins: postCSSPlugins, }, },  }, ],
+    use: [  {loader: "css-loader", options: { url: false, importLoaders: 1 }, }, {loader: "postcss-loader", options: { postcssOptions: {   plugins: postCSSPlugins, }, },  }, ],
   
 }
 
@@ -103,9 +103,9 @@ if (currentTask == "build") {
   configuration.mode = "production";
 
   configuration.optimization = {
-    splitChunks: {chunks: 'all', minSize: 1000}
-    // minimize: true,
-    // minimizer: [`...`, new CSSMinimizerWebpackPlugin()]
+    splitChunks: {chunks: 'all', minSize: 1000},
+    minimize: true,
+    minimizer: [`...`, new CSSMinimizerWebpackPlugin()]
   }
 
   configuration.plugins.push(

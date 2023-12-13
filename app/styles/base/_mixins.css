@@ -1,6 +1,3 @@
-
-// Baseline styles (applied to all screen sizes)
-
 @define-mixin forMiniTablet {
     @media (min-width: 530px) {
         @mixin-content;
